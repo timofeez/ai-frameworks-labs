@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "KNN",
+    "task": "classification",
+    "stage": "baseline",
+    "model": "KNeighborsClassifier(k=5)",
+    "ROC-AUC": 0.6115583567014238,
+    "PR-AUC": 0.19342913546944374,
+    "F1": 0.18141263940520447,
+    "Precision": 0.4250871080139373,
+    "Recall": 0.11531190926275993,
+    "Accuracy": 0.8782483689041247,
+    "threshold": 0.5,
+    "fit_seconds": 0.07386589999805437
+  },
+  {
+    "algorithm": "KNN",
+    "task": "regression",
+    "stage": "baseline",
+    "model": "KNeighborsRegressor(k=5)",
+    "MAE": 452.83585951940853,
+    "RMSE": 696.4391602261377,
+    "R2": 0.8750300675389429,
+    "fit_seconds": 0.020516600001428742
+  },
+  {
+    "algorithm": "KNN",
+    "task": "classification",
+    "stage": "improved",
+    "model": "KNN(k=151, distance) + scale + features",
+    "ROC-AUC": 0.7784551137352289,
+    "PR-AUC": 0.40729610460530413,
+    "F1": 0.438226431338786,
+    "Precision": 0.4023715415019763,
+    "Recall": 0.4810964083175803,
+    "Accuracy": 0.8556894835784584,
+    "threshold": 0.16999999999999998,
+    "fit_seconds": 0.09218569999939064
+  },
+  {
+    "algorithm": "KNN",
+    "task": "regression",
+    "stage": "improved",
+    "model": "KNN(k=10, distance) + cyclic time + daytype",
+    "MAE": 245.52185701719938,
+    "RMSE": 404.2682890964383,
+    "R2": 0.9578906515435256,
+    "fit_seconds": 0.12253919999784557
+  },
+  {
+    "algorithm": "KNN",
+    "task": "classification",
+    "stage": "scratch",
+    "model": "KNNClassifierScratch(k=5)",
+    "ROC-AUC": 0.612091729175569,
+    "PR-AUC": 0.19375103192388804,
+    "F1": 0.18141263940520447,
+    "Precision": 0.4250871080139373,
+    "Recall": 0.11531190926275993,
+    "Accuracy": 0.8782483689041247,
+    "threshold": 0.5,
+    "fit_seconds": 0.07362639999337262
+  },
+  {
+    "algorithm": "KNN",
+    "task": "regression",
+    "stage": "scratch",
+    "model": "KNNRegressorScratch(k=5)",
+    "MAE": 452.85439309919906,
+    "RMSE": 696.8683099797962,
+    "R2": 0.874876005726798,
+    "fit_seconds": 0.01929779999773018
+  },
+  {
+    "algorithm": "KNN",
+    "task": "classification",
+    "stage": "scratch_improved",
+    "model": "KNNClassifierScratch(k=151, distance) + scale + features",
+    "ROC-AUC": 0.7784248111712295,
+    "PR-AUC": 0.40727580608710234,
+    "F1": 0.438226431338786,
+    "Precision": 0.4023715415019763,
+    "Recall": 0.4810964083175803,
+    "Accuracy": 0.8556894835784584,
+    "threshold": 0.16999999999999998,
+    "fit_seconds": 0.08494359999895096
+  },
+  {
+    "algorithm": "KNN",
+    "task": "regression",
+    "stage": "scratch_improved",
+    "model": "KNNRegressorScratch(k=10, distance) + cyclic time + daytype",
+    "MAE": 242.08242157169838,
+    "RMSE": 403.08953816252716,
+    "R2": 0.9581358553900414,
+    "fit_seconds": 0.06303209999896353
+  }
+]

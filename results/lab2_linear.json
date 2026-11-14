@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "Линейные модели",
+    "task": "classification",
+    "stage": "baseline",
+    "model": "LogisticRegression()",
+    "ROC-AUC": 0.7708963995582454,
+    "PR-AUC": 0.4096386142290279,
+    "F1": 0.27994011976047906,
+    "Precision": 0.6726618705035972,
+    "Recall": 0.1767485822306238,
+    "Accuracy": 0.8936193741015149,
+    "threshold": 0.5,
+    "fit_seconds": 5.045634599999175
+  },
+  {
+    "algorithm": "Линейные модели",
+    "task": "regression",
+    "stage": "baseline",
+    "model": "LinearRegression()",
+    "MAE": 1575.7271415031082,
+    "RMSE": 1797.3501159811838,
+    "R2": 0.16765277334083606,
+    "fit_seconds": 0.05519990000175312
+  },
+  {
+    "algorithm": "Линейные модели",
+    "task": "classification",
+    "stage": "improved",
+    "model": "LogisticRegression(C=0.1, class_weight=balanced) + scale + features",
+    "ROC-AUC": 0.7728735234898138,
+    "PR-AUC": 0.41302249891211945,
+    "F1": 0.44678899082568807,
+    "Precision": 0.43404634581105167,
+    "Recall": 0.4603024574669187,
+    "Accuracy": 0.8666371779276789,
+    "threshold": 0.63,
+    "fit_seconds": 0.25460780000139493
+  },
+  {
+    "algorithm": "Линейные модели",
+    "task": "regression",
+    "stage": "improved",
+    "model": "Ridge(alpha=0.01) + hour×daytype + clean weather",
+    "MAE": 291.55074561198273,
+    "RMSE": 450.86791518915595,
+    "R2": 0.9476233363499174,
+    "fit_seconds": 0.11512070000026142
+  },
+  {
+    "algorithm": "Линейные модели",
+    "task": "classification",
+    "stage": "scratch",
+    "model": "LogisticRegressionScratch(C=1)",
+    "ROC-AUC": 0.7718121051641014,
+    "PR-AUC": 0.41098463145595543,
+    "F1": 0.2803877703206562,
+    "Precision": 0.6643109540636042,
+    "Recall": 0.1776937618147448,
+    "Accuracy": 0.8932876257879022,
+    "threshold": 0.5,
+    "fit_seconds": 0.1774862000020221
+  },
+  {
+    "algorithm": "Линейные модели",
+    "task": "regression",
+    "stage": "scratch",
+    "model": "LinearRegressionScratch()",
+    "MAE": 1575.7271415031096,
+    "RMSE": 1797.3501159811844,
+    "R2": 0.1676527733408354,
+    "fit_seconds": 0.03249270000378601
+  },
+  {
+    "algorithm": "Линейные модели",
+    "task": "classification",
+    "stage": "scratch_improved",
+    "model": "LogisticRegressionScratch(C=0.1, class_weight=balanced) + scale + features",
+    "ROC-AUC": 0.7727756320037689,
+    "PR-AUC": 0.4128551139783401,
+    "F1": 0.44719926538108357,
+    "Precision": 0.4348214285714286,
+    "Recall": 0.4603024574669187,
+    "Accuracy": 0.8668583434700874,
+    "threshold": 0.63,
+    "fit_seconds": 0.18568969999614637
+  },
+  {
+    "algorithm": "Линейные модели",
+    "task": "regression",
+    "stage": "scratch_improved",
+    "model": "LinearRegressionScratch(alpha=0.01) + hour×daytype + clean weather",
+    "MAE": 291.5507456119828,
+    "RMSE": 450.8679151891558,
+    "R2": 0.9476233363499174,
+    "fit_seconds": 0.10748289999901317
+  }
+]

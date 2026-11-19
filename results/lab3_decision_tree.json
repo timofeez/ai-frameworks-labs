@@ -1,0 +1,98 @@
+[
+  {
+    "algorithm": "Решающее дерево",
+    "task": "classification",
+    "stage": "baseline",
+    "model": "DecisionTreeClassifier()",
+    "ROC-AUC": 0.6133654430033628,
+    "PR-AUC": 0.17685142078129285,
+    "F1": 0.3132313231323132,
+    "Precision": 0.29896907216494845,
+    "Recall": 0.32892249527410206,
+    "Accuracy": 0.83125069114232,
+    "threshold": 0.5,
+    "fit_seconds": 0.535507199994754
+  },
+  {
+    "algorithm": "Решающее дерево",
+    "task": "regression",
+    "stage": "baseline",
+    "model": "DecisionTreeRegressor()",
+    "MAE": 377.7539125077018,
+    "RMSE": 664.7665568975618,
+    "R2": 0.8861383443849657,
+    "fit_seconds": 0.18050860000221292
+  },
+  {
+    "algorithm": "Решающее дерево",
+    "task": "classification",
+    "stage": "improved",
+    "model": "DecisionTreeClassifier(max_depth=None, min_samples_leaf=100)",
+    "ROC-AUC": 0.7770590651422267,
+    "PR-AUC": 0.42804098263036955,
+    "F1": 0.4744525547445255,
+    "Precision": 0.4585537918871252,
+    "Recall": 0.4914933837429111,
+    "Accuracy": 0.8726086475727082,
+    "threshold": 0.24,
+    "fit_seconds": 0.36360270000295714
+  },
+  {
+    "algorithm": "Решающее дерево",
+    "task": "regression",
+    "stage": "improved",
+    "model": "DecisionTreeRegressor(max_depth=12, min_samples_leaf=10) + daytype",
+    "MAE": 256.4385619335096,
+    "RMSE": 437.9964481731227,
+    "R2": 0.9505711682316037,
+    "fit_seconds": 0.1496253000004799
+  },
+  {
+    "algorithm": "Решающее дерево",
+    "task": "classification",
+    "stage": "scratch",
+    "model": "DecisionTreeClassifierScratch()",
+    "ROC-AUC": 0.61133801208078,
+    "PR-AUC": 0.1762625785937851,
+    "F1": 0.3110704483074108,
+    "Precision": 0.30141843971631205,
+    "Recall": 0.32136105860113423,
+    "Accuracy": 0.8334623465664049,
+    "threshold": 0.5,
+    "fit_seconds": 3.1446256000053836
+  },
+  {
+    "algorithm": "Решающее дерево",
+    "task": "regression",
+    "stage": "scratch",
+    "model": "DecisionTreeRegressorScratch()",
+    "MAE": 377.0047340316287,
+    "RMSE": 670.3758849849364,
+    "R2": 0.8842086985213968,
+    "fit_seconds": 5.94989849999547
+  },
+  {
+    "algorithm": "Решающее дерево",
+    "task": "classification",
+    "stage": "scratch_improved",
+    "model": "DecisionTreeClassifierScratch(max_depth=None, min_samples_leaf=100)",
+    "ROC-AUC": 0.7675062410261206,
+    "PR-AUC": 0.40729471617925866,
+    "F1": 0.46117867165575305,
+    "Precision": 0.4564814814814815,
+    "Recall": 0.4659735349716446,
+    "Accuracy": 0.8726086475727082,
+    "threshold": 0.24,
+    "fit_seconds": 0.9157392000051914
+  },
+  {
+    "algorithm": "Решающее дерево",
+    "task": "regression",
+    "stage": "scratch_improved",
+    "model": "DecisionTreeRegressorScratch(max_depth=12, min_samples_leaf=10) + daytype",
+    "MAE": 256.9017304289117,
+    "RMSE": 439.76969832918746,
+    "R2": 0.9501701279444477,
+    "fit_seconds": 0.5706017999982578
+  }
+]
